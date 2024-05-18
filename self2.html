@@ -11,15 +11,11 @@
 .grid-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(4, 100px);
+    grid-template-rows: repeat(3, 100px);
     gap: 10px;
     margin: 0 auto;
     width: 500px;
     
-}
-
-.grid-item:nth-child(2n){
-    background-color: aqua;
 }
 
 .grid-container > div {
@@ -28,6 +24,10 @@
     color: white;
     gap: 10px;
 }
+
+.grid-container > div:nth-child(even) {
+            background-color: pink;
+        }
 
 .box1, .box4, .box6, .box7, .box8, .box9, .box10 {
     width: 100px;
