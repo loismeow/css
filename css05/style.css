@@ -1,0 +1,17 @@
+.flex-container{
+    width: 300px; /* 플렉스 컨테이너의 너비 300 */
+    height: 300px; /* 플렉스 컨테이너의 너비 300 */
+    display: flex; /* 플렉스 컨테이너로 설정 */
+    flex-wrap: nowrap; /* 자식들이 부모 넓이를 초과할 때 어떻게 할지. nowrap이 기본값이고 한줄로 쭉 나열(부모 넓이 초과해도) */
+    /* 반면에 wrap은 부모넓이 초과시 밑으로 내려간다. */
+    border-color: gray;
+    border: 5px solid rgb(229, 143, 143);
+}
+.flex-item{
+    color: white;
+    background-color: pink;
+}
+/* 짝수번째 아이템의 배경색 변경 */
+.flex-item:nth-child(2n){
+    background-color: aquamarine;
+}
