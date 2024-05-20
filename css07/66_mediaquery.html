@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미디어 쿼리</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+        /* 미디어 쿼리- 화면 너비가 420px 이상일때 적용 */
+        /* 원래는 기본 속성인 빨간색에서 화면 넓이를 420px 밑으로 좁히면 파란색으로 변환 */
+        @media only screen and (min-width: 420px) {
+            div{
+                background-color: blue;
+            }
+        }
+        </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
